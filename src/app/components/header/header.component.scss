@@ -1,0 +1,61 @@
+@import '../../global.variables';
+
+.header {
+  height: 45px;
+  outline: 1px solid black;
+  display: flex;
+  background-color: $headerBgCol;
+  color: $textCol;
+}
+
+.mNoMargingNoPadding {
+  margin: 0;
+  padding: 0;
+}
+.mHeaderListStyles {
+  list-style-type: none;
+  line-height: 45px;
+  align-items: center;
+}
+
+/*burger nav*/
+.header-burger {
+  width: 40px;
+  height: 100%;
+  background: #a1440c;
+}
+
+/* logo styles */
+.header-logo {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  &:hover {
+    background: $headerHoverCol;
+  }
+  span {
+    margin: 0 5px;
+  }
+  h2 {
+    margin: 0 5px 0 0;
+  }
+}
+
+/* menu #1 styles*/
+.header-menuOne {
+  display: flex;
+}
+
+/* menu #2 styles*/
+
+.header-menuTwo {
+  margin-left: auto;
+}
+
+.header-menuTwo ul {
+  display: flex;
+}
+
+.header-menuTwo ul li {
+  outline: 1px solid #e1df01;
+}
