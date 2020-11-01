@@ -1,61 +1,79 @@
 @import '../../global.variables';
 
-.header {
-  height: 45px;
-  outline: 1px solid black;
+$logoIconSize: 16px;
+
+// modifiers
+.mFlex {
   display: flex;
-  background-color: $headerBgCol;
-  color: $textCol;
+}
+
+.mAlignItemsCenter {
+  align-items: center;
+}
+
+.mHeaderListStyles {
+  list-style-type: none;
 }
 
 .mNoMargingNoPadding {
   margin: 0;
   padding: 0;
 }
-.mHeaderListStyles {
-  list-style-type: none;
-  line-height: 45px;
-  align-items: center;
-}
 
-/*burger nav*/
-.header-burger {
-  width: 40px;
-  height: 100%;
-  background: #a1440c;
-}
-
-/* logo styles */
-.header-logo {
+// general styles
+.header {
+  padding: 0 7px;
+  height: 45px;
   display: flex;
-  align-items: center;
+  background-color: $headerBgCol;
+  color: $textCol;
+  font-family: $fontFamily;
+}
+
+// burger nav
+.header-burger {
+  // TODO hide burger button
+  display: block;
+  width: 50px;
+  height: 100%;
+  font-size: 16px;
+  text-align: center;
+  line-height: 45px;
   cursor: pointer;
   &:hover {
     background: $headerHoverCol;
   }
-  span {
+}
+
+// logo styles
+.header-logo {
+  cursor: pointer;
+  &:hover {
+    background: $headerHoverCol;
+  }
+  i {
     margin: 0 5px;
+    font-size: $logoIconSize;
   }
   h2 {
     margin: 0 5px 0 0;
   }
 }
 
-/* menu #1 styles*/
-.header-menuOne {
-  display: flex;
-}
-
-/* menu #2 styles*/
-
-.header-menuTwo {
+.header-rightMenu {
   margin-left: auto;
 }
 
-.header-menuTwo ul {
-  display: flex;
+.header-rightMenu ul li {
+  display: inline-block;
+  margin-left: 10px;
 }
 
-.header-menuTwo ul li {
-  outline: 1px solid #e1df01;
+.header-avatar {
+  margin-left: 10px;
+  img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+  }
 }
